@@ -11,7 +11,7 @@
 
 //Shade: Enemies are less likely to target this unit.
 //By Sme
-#define ShadeID 255
+#define ShadeID 18
 
 //Shade+: Enemies will not target this unit.
 //By Sme
@@ -871,7 +871,7 @@
 
 //Discipline: Weapon experience gains are doubled.
 //Author Unknown (Initial Commit)
-#define DisciplineID 18
+#define DisciplineID 255
 
 //Vantage: If HP < 50%, strike first when attacked.
 //Author Unknown (Initial Commit)
@@ -943,15 +943,15 @@
 
 //Shadowgift: Allows the user to use Dark Magic. (Uses highest Magic Rank)
 //By Leonarth
-#define ShadowgiftID 179
+#define ShadowgiftID 255
 
 //Lumina: Allows the user to use Light Magic. (Uses highest Magic Rank)
 //By Leonarth
-#define LuminaID 180
+#define LuminaID 255
 
 //Discipline+: Weapon experience gains are doubled. Unit may S-Rank multiple weapon types.
 //By Zeta
-#define DisciplinePlusID 204
+#define DisciplinePlusID 255
 
 //Watchful: This unit cannot be captured or stolen from.
 //By Sme
@@ -981,9 +981,9 @@
 
 //Display-Only Skills
 
-#define CunningID 255
-#define NiceThighsID 255
-#define PersonalityID 255
+#define CunningID 204
+#define NiceThighsID 179
+#define PersonalityID 180
 
 
 //Broken Skills
