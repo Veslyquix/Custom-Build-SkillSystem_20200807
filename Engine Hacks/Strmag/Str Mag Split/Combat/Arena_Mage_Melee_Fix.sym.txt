@@ -1,0 +1,4 @@
+RangeMotion=$34
+MeleeMotion=$30
+ItemTable=$40
+Exit=$36
