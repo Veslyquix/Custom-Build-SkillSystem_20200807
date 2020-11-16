@@ -15,8 +15,7 @@
   #define Trv_Icon_X 0xB8
   #define Trv_Icon_Y 0x2E
   
-  #include "Display Growths Options/Display Growths Options.txt"
-  #include "../mss_leftstatscreen/mss_leftstatscreen.event"
+  #include "DisplayGrowthsOptions/DisplayGrowthsOptions.event"
  
   PUSH
     #ifdef ENABLE_PERSONAL_INFO
@@ -99,7 +98,7 @@
   
     // Display growths hack
 
-    #ifdef Display_Growths_Toggle
+    #ifdef PRESS_SELECT_TO_VIEW_GROWTHS
       ORG $8888C
         BYTE 0x82
     #endif
@@ -219,72 +218,21 @@
 
   ALIGN 4
   Button_Branch:
-    #incbin "asm/Button Branch.dmp"
-
-  ALIGN 4
-	Growth_Getter_Table:
-	POIN Get_Hp_Growth Get_Str_Growth Get_Mag_Growth Get_Skl_Growth Get_Spd_Growth Get_Luk_Growth Get_Def_Growth Get_Res_Growth
-
-	ALIGN 4
-	Get_Hp_Growth:
-	#incbin "asm/Growth Getters/Get_Hp_Growth.dmp"
-	POIN Extra_Growth_Boosts|1
-	ALIGN 4
-	
-	Get_Str_Growth:
-	#incbin "asm/Growth Getters/Get_Str_Growth.dmp"
-	POIN Extra_Growth_Boosts|1
-	ALIGN 4
-	
-	Get_Mag_Growth:
-	#incbin "asm/Growth Getters/Get_Mag_Growth.dmp"
-	POIN Extra_Growth_Boosts|1
-	POIN MagCharTable
-	ALIGN 4
-	
-	Get_Skl_Growth:
-	#incbin "asm/Growth Getters/Get_Skl_Growth.dmp"
-	POIN Extra_Growth_Boosts|1
-	ALIGN 4
-	
-	Get_Spd_Growth:
-	#incbin "asm/Growth Getters/Get_Spd_Growth.dmp"
-	POIN Extra_Growth_Boosts|1
-	ALIGN 4
-	
-	Get_Def_Growth:
-	#incbin "asm/Growth Getters/Get_Def_Growth.dmp"
-	POIN Extra_Growth_Boosts|1
-	ALIGN 4
-	
-	Get_Res_Growth:
-	#incbin "asm/Growth Getters/Get_Res_Growth.dmp"
-	POIN Extra_Growth_Boosts|1
-	ALIGN 4
-	
-	Get_Luk_Growth:
-	#incbin "asm/Growth Getters/Get_Luk_Growth.dmp"
-	POIN Extra_Growth_Boosts|1
-
-	ALIGN 4
-	Extra_Growth_Boosts:
-	#incbin "asm/Growth Getters/Extra_Growth_Boosts.dmp"
-	WORD Growth_Options
-	POIN ItemTable
+    #incbin "asm/ButtonBranch.dmp"
 
   ALIGN 4
   Load_Page:
-    #incbin "asm/Load Page.dmp"
+    #incbin "asm/LoadPage.dmp"
     WORD Stat_Page_Ram_Loc
 
   ALIGN 4
   Store_Page:
-    #incbin "asm/Store Page.dmp"
+    #incbin "asm/StorePage.dmp"
     WORD Stat_Page_Ram_Loc
 
   ALIGN 4
   Rescue_Arrows:
-    #incbin "asm/Check Rescue Arrows.dmp"
+    #incbin "asm/CheckRescueArrows.dmp"
     POIN SkillTester
     WORD SaviorID
 
@@ -295,7 +243,7 @@
 
   ALIGN 4
   HP_Name_Color:
-    #incbin "asm/HP Name Color.dmp"
+    #incbin "asm/HPNameColor.dmp"
     POIN New_Palettes
     WORD Growth_Options
     POIN Get_Hp_Growth
@@ -326,11 +274,11 @@
 	
   ALIGN 4
   Growth_Color_Table:
-    #include "Display Growths Options/Growth Colors Table.txt"
+    #include "DisplayGrowthsOptions/GrowthColorsTable.event"
 
   ALIGN 4
   New_Palettes:
-    #include "Display Growths Options/New Palette.txt"
+    #include "DisplayGrowthsOptions/NewPalette.event"
 
   /*
 
@@ -386,7 +334,7 @@ ST_Str:
 ST_Mag:
   RMenu(ST_Str,ST_Skl,ST_Name,ST_Aid,0x66,0x28,0x547)
 ST_Skl:
-  RMenu(ST_Mag,ST_Spd,ST_Name,ST_Trv,0x66,0x38,0x548)
+  RMenu(ST_Mag,ST_Spd,ST_Name,ST_Cond,0x66,0x38,0x548)
 ST_Spd:
   RMenu(ST_Skl,ST_Luck,ST_Name,ST_Affin,0x66,0x48,0x549)
 ST_Luck:
@@ -405,14 +353,14 @@ ALIGN 4
 ST_Con:
   RMenu(PersonalDataRText,ST_Aid,ST_Str,0,0xA6,0x18,0x54e)
 ST_Aid:
-  RMenu(ST_Con,ST_Trv,ST_Mag,0,0xa6,0x28,0x54F)
-ST_Trv:
-  RMenu(ST_Aid,ST_Affin,ST_Skl,0,0xa6,0x38,0x550)
+  RMenu(ST_Con,ST_Cond,ST_Mag,0,0xa6,0x28,0x54F)
+ST_Cond:
+  RMenu(ST_Aid,ST_Affin,ST_Skl,0,0xa6,0x38,0x552,ConditionGetter)
 ST_Affin:
   #ifdef LEADERSHIP_STARS
-    RMenu(ST_Trv,ST_Talk,ST_Spd,0,0xa6,0x48,LeadRText)
+    RMenu(ST_Cond,ST_Talk,ST_Spd,0,0xa6,0x48,LeadRText)
   #else
-    RMenu(ST_Trv,ST_Talk,ST_Spd,0,0xa6,0x48,0x551)
+    RMenu(ST_Cond,ST_Talk,ST_Spd,0,0xa6,0x48,0x551)
   #endif
 //ST_Cond:
   //RMenu(ST_Affin,ST_Talk,ST_Spd,0,0xA6,0x48,0x552,ConditionGetter)
@@ -432,7 +380,7 @@ ST_Skill5:
   RMenu(ST_Skill2,0,ST_Skill4,ST_Skill6,0xbe,0x88,4,RTextLoop,SkillDescGetter+16)
 ST_Skill6:
   RMenu(ST_Skill3,0,ST_Skill5,0,0xd6,0x88,5,RTextLoop,SkillDescGetter+20)
-#ifdef Display_Growths_Toggle
+#ifdef PRESS_SELECT_TO_VIEW_GROWTHS
   PersonalDataRText:
   RMenu(0,ST_Str,0,0,0x76,0x4,PersonalDataDesc1)
 #else

@@ -1,0 +1,7 @@
+You need to remove the part about Spirit Dust item 0xC0. 
+Currently, it makes opening the prep menu item part crash the game
+when a unit is holding item 0xC0.
+
+Edit:
+_Master Asm Installer.event has
+"#include "Chapter.event" which fixes this. 
