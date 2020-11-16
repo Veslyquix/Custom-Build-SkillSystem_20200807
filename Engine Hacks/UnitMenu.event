@@ -163,7 +163,7 @@ UnitMenuTable:
   MenuCommand(0x68F,0x6D5,GreenText,NewSupplyUsability,0x23FB8)
   
   //FEBuilderGBA ADD
-  UM_Null
+  MenuCommand(UM_CombatArts,UM_CombatArtsDesc,GreenText,CombatArtsMenuDef,CombatArtsMenu)   //Combat arts
   UM_Null
   UM_Null
   UM_Null
