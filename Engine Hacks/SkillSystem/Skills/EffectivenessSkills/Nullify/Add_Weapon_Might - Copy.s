@@ -55,13 +55,6 @@ ldsh r2, [r6, r3] 	@avo
 add r2, r2, #15		@+15 avo attacker
 strh r2, [r6, r3] 	@put our avo back into attacker battle struct
 
-mov r3, #0x5A 		@0x62 entry as attacker's attack
-mov r2,r6 		@attacker battle struct					
-ldsh r2, [r6, r3] 	@atk
-lsl r2,r2,#0x1		@2x attack
-strh r2, [r6, r3] 	@put our avo back into attacker battle struct
-mov		r5,r0 	@remove 2x MT
-
 mov r3, #0x5C 		@0x64 entry as attacker's def/res
 mov r2,r6 		@attacker battle struct					
 ldsh r2, [r6, r3] 	@

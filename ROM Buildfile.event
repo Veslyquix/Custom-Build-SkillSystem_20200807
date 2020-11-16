@@ -18,6 +18,9 @@
     //Engine Hacks
     #include "Engine Hacks/_MasterHackInstaller.event"
     MESSAGE Used hax space ends at currentOffset
+
+	#include "Pokemblem/Installer.txt"
+	MESSAGE Used Pokemblem space ends at currentOffset
 /*
     //Events
     #include "Events/Release_map.event"
