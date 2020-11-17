@@ -1,6 +1,8 @@
-#define Pokemblem
+#ifdef POKEMBLEM
 
 //#include "Menu/MenuCommandForm_00B91D94.event"
 //#include "Menu/MenuCommandForm_00B6016C.event"
 //#include "Menu/MenuCommandForm_01444258.event"
 #include "DangerRadius/FogDR.event"
+
+#enddef // not pokemblem so don't install stuff
