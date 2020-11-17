@@ -45,17 +45,9 @@
 	PUSH
 	
 	//Modify the part that multiplies weapon might for effective weapons and slayer
-	//ORG $2AAEC
-	//#incbin "Add_Weapon_Might.dmp"
-	//ORG $2AAEC 
-	//SHORT 0x46C0
-	//callHack_r3(Add_Weapon_Might)
-
-	//Modify the part that multiplies weapon might for effective weapons and slayer
-	ORG $2AAEC 
-	callHack_r3(Add_Weapon_Might) //0xC bytes
-	SHORT 0xE027
-
+	ORG $2AAEC
+	#incbin "Add_Weapon_Might.dmp"
+	
 	//slayer redux
 	ORG $16C88
 	jumpToHack(Redone_Redone_Slayer)
@@ -64,16 +56,8 @@
 	ORG $16BEC
 	jumpToHack(Redone_Effectiveness)
 	
-
-
 	POP
-
-	ALIGN 4
-	Add_Weapon_Might:
-	#incbin "Add_Weapon_Might.dmp"
-
-
-
+	
 	ALIGN 4
 	Redone_Slayer:
 	#incbin "Redone_Slayer.dmp"

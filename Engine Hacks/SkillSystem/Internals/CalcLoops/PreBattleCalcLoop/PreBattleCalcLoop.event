@@ -43,7 +43,6 @@ POIN LethalitySkill Bane
 #else
 POIN LethalitySkill NonGBALethalitySkill Bane
 #endif
-POIN ModularPreBattleSkills
 
 //add any new ones before here
 

@@ -51,9 +51,6 @@ mov		r14,r3
 cmp		r0,#0
 bne		RetFalse
 ldrb	r0,[r6,#1]			@multiplier
-
-
-
 b		GoBack
 RetFalse:
 mov		r0,#0

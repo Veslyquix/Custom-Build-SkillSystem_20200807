@@ -1,0 +1,3 @@
+DefiantSkillID=$30
+SkillTester=$2C
+GoBack=$24

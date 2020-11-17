@@ -17,15 +17,6 @@
 .equ ResourcefulID,SkybreakerClassType+4
 
 push	{r4-r6,r14}
-
-@added these lines	
-@mov r4,r0 			
-@mov r5, #0x64 				@atkr into register 4 @hit is 0x60 entry into attacker
-@ldr r4, [r4, r5] 			@hit 
-@add r4, r4, #30			@+30 hit. 
-@str r4, [r0, r5] 			@put our hit back into r0 maybe?
-@added these lines
-
 mov		r4,r0
 mov		r5,r1
 ldr		r0,[r5,#0x4]
@@ -90,38 +81,11 @@ b 		GoBack
 
 RetFalse:
 mov		r6,#0
-@cmp		r6,#0  @added
-@beq		GoBack2 @added
-
 GoBack:
 mov		r0,r6
 pop		{r4-r6}
 pop		{r1}
 bx		r1
-
-@mov r0,r4		
-@mov r1, #0x64 				@atkr into register 0 battle hit is 0x64 entry into attacker
-@ldr r0, [r0, r1] 			@hit 
-@add r0, r0, #30				@+30 hit. 
-@str r0, [r4, r1] 			@put our hit back into r0 maybe?
-@mov		r1,#0x50
-@mov		r0,r6
-@pop		{r4-r6}
-@pop		{r1}
-@bx		r1
-@added these lines
-
-
-@added these lines	
-@mov r7,r4 			
-@mov r0, #0x64 				@atkr into register 7 @hit is 0x60 entry into attacker
-@ldr r7, [r7, r0] 			@hit 
-@add r7, r7, #30			@+30 hit. 
-@str r7, [r4, r0] 			@put our hit back into r4 maybe?
-@added these lines
-
-
-
 
 .ltorg
 .align

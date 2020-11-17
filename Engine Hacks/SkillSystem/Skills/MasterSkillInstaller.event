@@ -19,7 +19,6 @@ POP
 #include "DebuffSkills/DebuffSkills.event"
 #include "EffectivenessSkills/EffectivenessSkills.event"
 #include "EXPSkills/EXPSkills.event"
-#include "ModularPreBattleSkills/ModularPreBattleSkills.event"
 #include "HPRestorationSkills/HPRestorationSkills.event"
 #include "MovementSkills/MovementSkills.event"
 #include "MugLoadingSkills/MugLoadingSkills.event"
