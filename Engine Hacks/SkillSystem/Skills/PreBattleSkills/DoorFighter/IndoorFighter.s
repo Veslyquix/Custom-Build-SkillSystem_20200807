@@ -6,7 +6,7 @@
 
 .equ gMapTerrain,0x202E4DC
 
-@inIndoor/outIndoor fighter func
+@indoor/outdoor fighter func
 
 push {r4-r7,lr}
 @goes in the battle loop.

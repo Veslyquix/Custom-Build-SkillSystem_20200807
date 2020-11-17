@@ -68,6 +68,16 @@
 
 #define ALSO_USE_MOVEMENT_SKILL_CHECK True
 
+//If true, get 1/4 prices with both bargain and silver card simultaneously.
+#define DOES_BARGAIN_STACK True
+
+//If true, will use the vanilla check in addition to the skill check.
+#define ALSO_USE_VANILLA_DANCE_CHECK False
+#define ALSO_USE_VANILLA_SUPPLY_CHECK True
+#define ALSO_USE_VANILLA_SUMMON_CHECK False
+#define ALSO_USE_VANILLA_STEAL_CHECK True
+
+
 //If uncommented, Combat Arts will be enabled.
 //This changes the behavior of most command skills and some proc skills such that they cost additional durability per hit and are selected from a submenu.
 #define COMBAT_ARTS

@@ -64,18 +64,6 @@ asr r0, #0x10
 ldrh r1, [r7, #8] @final def
 lsl r1, #0x10
 asr r1, #0x10
-
-@@
-
-ldr r0, =0x94441D8
-mov r1, #0x01
-blh 0x0800d07c
-
-MOV r0, #0x17
-POP {r1}
-bx r1
-
-@@
 sub r0, r1 @calc damage
 lsr r1, r0, #1
 add r0, r1 @multiply by 1.5x

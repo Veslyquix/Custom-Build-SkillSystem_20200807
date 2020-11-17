@@ -11,6 +11,29 @@ ldrb r1, [r4, #0x13] @curr hp
 cmp r0, r1
 bne End @skip if not max hp
 
+08016bec .thumb
+08016bec IsWeaponEffectiveAgainst
+
+
+mov		r0,r4 @put atkr back into r0
+
+ldr		r0,[r5]
+ldr		r0,[r0,#0x28]
+ldr		r1,[r5,#0x4]
+ldr		r1,[r1,#0x28]
+orr		r0,r1
+mov		r1,#0x1			@is defender mounted
+tst		r0,r1
+bne		GoBack
+
+GoBack:
+pop		{r4-r5}
+pop		{r0}
+bx		r0
+
+
+
+
 @has Perfectionist
 ldr r0, SkillTester
 mov lr, r0
@@ -20,10 +43,10 @@ ldr r1, PerfectionistID
 cmp r0, #0
 beq End
 
-@add 15 hit and avoid
+@add 30 hit and 15 avoid
 mov r1, #0x60
 ldrh r0, [r4, r1] @hit
-add r0, #15
+add r0, #30
 strh r0, [r4,r1]
 mov r1, #0x62
 ldrh r0, [r4, r1] @avoid

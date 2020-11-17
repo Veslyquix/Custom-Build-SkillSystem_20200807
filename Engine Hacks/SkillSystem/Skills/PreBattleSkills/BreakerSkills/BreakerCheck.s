@@ -18,17 +18,17 @@ mov     lr, r3
 .short 0xf800        @Call Skill Tester.
 cmp r0, #0            @Check if unit has the corresponding Faire skill.
 beq NoSkill
-mov     r0,r4        @Move attacker's data into r0.
-ldr     r1, HitAvoidBonus @Load Hit/Avoid Bonus into r1
-add     r0,#0x60    @Move to the attacker's hit.
-ldrh    r3,[r0]        @Load the attacker's hit into r3.
-add     r3,r1    @Add bonus to the attacker's hit.
-strh     r3,[r0]        @Store attacker hit.
-mov     r0,r4         @Get attacker data again.
-add     r0,#0x62    @Move to the attacker avoid.
-ldrh    r3,[r0]        @Load the attacker's avoid into r3.
-add     r3,r1    @Add bonus to the attacker's avoid.
-strh     r3,[r0]        @Store attacker hit.
+mov     r0,r4        		@Move attacker's data into r0.
+ldr     r1, HitAvoidBonus 	@Load Hit/Avoid Bonus into r1
+add     r0,#0x60    		@Move to the attacker's hit.
+ldrh    r3,[r0]      		@Load the attacker's hit into r3.
+add     r3,r1    		@Add bonus to the attacker's hit.
+strh     r3,[r0]        	@Store attacker hit.
+mov     r0,r4         		@Get attacker data again.
+add     r0,#0x62    		@Move to the attacker avoid.
+ldrh    r3,[r0]        		@Load the attacker's avoid into r3.
+add     r3,r1    		@Add bonus to the attacker's avoid.
+strh     r3,[r0]        	@Store attacker hit.
 NoSkill:
 pop {r4-r7} 
 pop {r0}

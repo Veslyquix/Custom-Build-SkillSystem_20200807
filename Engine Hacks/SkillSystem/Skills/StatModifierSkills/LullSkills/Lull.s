@@ -47,7 +47,7 @@ beq NoRallyMag
 	mov r0,r4
 	add r0,#0x4C
 	ldr r0,[r0]
-	ldr r1,=0x00000042
+	ldr r1,=#0x00000042
 	and r0,r1
 	cmp r0,#0
 	beq NoRallyMag
@@ -88,7 +88,7 @@ beq RallyStr
 	mov r0,r4
 	add r0,#0x4C
 	ldr r0,[r0]
-	ldr r1,=0x00000042
+	ldr r1,=#0x00000042
 	and r0,r1
 	cmp r0,#0
 	beq RallyStr
@@ -133,7 +133,7 @@ beq noStrRally
 	mov r0,r4
 	add r0,#0x4C
 	ldr r0,[r0]
-	ldr r1,=0x00000042
+	ldr r1,=#0x00000042
 	and r0,r1
 	cmp r0,#0
 	bne noStrRally
@@ -175,7 +175,7 @@ beq RallySpd
 	mov r0,r4
 	add r0,#0x4C
 	ldr r0,[r0]
-	ldr r1,=0x00000042
+	ldr r1,=#0x00000042
 	and r0,r1
 	cmp r0,#0
 	bne RallySpd
@@ -501,7 +501,7 @@ beq noResRally
 	mov r0,r5
 	add r0,#0x4C
 	ldr r0,[r0]
-	ldr r1,=0x00000042
+	ldr r1,=#0x00000042
 	and r0,r1
 	cmp r0,#0
 	beq noResRally
@@ -544,7 +544,7 @@ beq DefRally
 	mov r0,r5
 	add r0,#0x4C
 	ldr r0,[r0]
-	ldr r1,=0x00000042
+	ldr r1,=#0x00000042
 	and r0,r1
 	cmp r0,#0
 	beq DefRally
@@ -588,7 +588,7 @@ beq noDefRally
 	mov r0,r5
 	add r0,#0x4C
 	ldr r0,[r0]
-	ldr r1,=0x00000042
+	ldr r1,=#0x00000042
 	and r0,r1
 	cmp r0,#0
 	beq noDefRally
@@ -630,7 +630,7 @@ beq GoBack
 	mov r0,r5
 	add r0,#0x4C
 	ldr r0,[r0]
-	ldr r1,=0x00000042
+	ldr r1,=#0x00000042
 	and r0,r1
 	cmp r0,#0
 	beq GoBack
