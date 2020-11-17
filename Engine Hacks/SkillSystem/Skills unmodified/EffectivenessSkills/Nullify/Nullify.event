@@ -51,8 +51,13 @@
 	
 	//Modify the part that multiplies weapon might for effective weapons and slayer
 	ORG $2AAEC
+
+
 	callHack_r3(Add_Weapon_Might) //0xC bytes
 	SHORT 0xE027
+
+
+
 	
 	//slayer redux
 	ORG $16C88
@@ -66,7 +71,12 @@
 	
 	ALIGN 4
 	Add_Weapon_Might:
+#ifdef POKEMBLEM
+	#incbin "Add_Weapon_Might_Pokemblem.dmp"
+#endif // Effective weapons gain an accuracy bonus & more 
+#ifndef POKEMBLEM
 	#incbin "Add_Weapon_Might.dmp"
+#endif // Typical effective weapons 
 
 	ALIGN 4
 	Redone_Slayer:
