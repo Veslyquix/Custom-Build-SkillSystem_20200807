@@ -5,4 +5,4 @@
 //#include "Menu/MenuCommandForm_01444258.event"
 #include "DangerRadius/FogDR.event"
 
-#enddef // not pokemblem so don't install stuff
+#endif // not pokemblem so don't install stuff
