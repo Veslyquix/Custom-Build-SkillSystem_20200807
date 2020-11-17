@@ -1,6 +1,0 @@
-DanceID=$58
-SkillTester=$54
-AlsoUseVanillaCheck=$5C
-CheckTargetList=$30
-ReturnFalse=$40
-GoBack=$42

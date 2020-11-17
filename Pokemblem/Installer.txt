@@ -1,3 +1,5 @@
+#define Pokemblem
+
 //#include "Menu/MenuCommandForm_00B91D94.event"
 //#include "Menu/MenuCommandForm_00B6016C.event"
 //#include "Menu/MenuCommandForm_01444258.event"

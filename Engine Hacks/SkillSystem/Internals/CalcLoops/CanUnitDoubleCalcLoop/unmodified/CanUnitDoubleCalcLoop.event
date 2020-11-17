@@ -1,11 +1,5 @@
 
-ifdef POKEMBLEM
-#include "CanUnitDoubleCalcLoopPokemblem.lyn.event"
-endif // POKEMBLEM doubling
-
-ifndef POKEMBLEM
 #include "CanUnitDoubleCalcLoop.lyn.event"
-endif // not POKEMBLEM doubling
 
 PUSH
 ORG $2AF94
