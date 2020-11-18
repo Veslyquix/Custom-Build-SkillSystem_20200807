@@ -87,8 +87,14 @@
       #incbin "asm/Debuffs/ProcessDebuffs.dmp"
       WORD DebuffTable
 	#else
+	#ifdef POKEMBLEM
+	  #incbin "asm/Debuffs/ProcessDebuffsMagPokemblem.dmp"
+		  WORD DebuffTable
+		#endif // debuffs restore at 3 per turn
+	#ifndef POKEMBLEM
 	  #incbin "asm/Debuffs/ProcessDebuffsMag.dmp"
 	  WORD DebuffTable
+		#endif // debuffs restore at 1 per turn
 	#endif // USE_STRMAG_SPLIT
 
   ALIGN 4
