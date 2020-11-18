@@ -78,7 +78,7 @@
 #define ALSO_USE_VANILLA_STEAL_CHECK True
 
 //If uncommented, make changes specific to Pokemblem
-//#define POKEMBLEM
+#define POKEMBLEM
 
 //If uncommented, Combat Arts will be enabled.
 //This changes the behavior of most command skills and some proc skills such that they cost additional durability per hit and are selected from a submenu.
