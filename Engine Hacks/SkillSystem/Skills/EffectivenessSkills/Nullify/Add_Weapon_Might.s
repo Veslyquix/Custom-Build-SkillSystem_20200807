@@ -1,6 +1,6 @@
 .thumb
 
-@previously inserted inline at 2AEEC, pokemblem repoints this
+@inserted inline at 2AEEC
 
 .equ origin, 0x2AAEC
 .equ Check_Effectiveness, . + 0x16BEC - origin
