@@ -88,9 +88,11 @@ UnitMenuTable:
 
   #ifdef COMBAT_ARTS
 	MenuCommand(UM_CombatArts, UM_CombatArtsDesc, NormalText, CombatArtsUsability, CombatArtsEffect, $22c31, $22c99)
-  	//MenuCommand(UM_Capture, UM_CaptureDesc, NormalText, Capture_Usability, Capture_Effect_Func, $22c31, $22c99)
+
+  	MenuCommand(UM_Capture, UM_CaptureDesc, NormalText, Capture_Usability, Capture_Effect_Func, $22c31, $22c99)
 	
 	#else // COMBAT_ARTS
+
 	//Lunge
 	MenuCommand(UM_Lunge, UM_LungeDesc, NormalText, LungeUsability, LungeEffect, $22c31, $22c99)
 
@@ -191,7 +193,7 @@ UnitMenuTable:
   MenuCommand(0x68F,0x6D5,GreenText,NewSupplyUsability,0x23FB8)
   
   // UM_Call usability always 
-  	//MenuCommand(0x11C3, 0x11C4, GreenText, 0x4F449, 0x9444215) //fixed address of my call ASMC
+  MenuCommand(0x11C3, 0x11C4, GreenText, 0x4F449, 0x9444215) //fixed address of my call ASMC
 
   //FEBuilderGBA ADD
 
