@@ -78,7 +78,7 @@
 #define ALSO_USE_VANILLA_STEAL_CHECK True
 
 //If uncommented, make changes specific to Pokemblem
-//#define POKEMBLEM
+#define POKEMBLEM
 
 //If uncommented, Combat Arts will be enabled.
 //This changes the behavior of most command skills and some proc skills such that they cost additional durability per hit and are selected from a submenu.
@@ -86,6 +86,14 @@
 
 //If true, Combat Arts will not be allowed to hit more than once.
 #define ARTS_HIT_ONCE True
+
+//If uncommented, ModularPreBattleSkill will be installed.
+#define Modular_PreBattle_Skill
+
+// If uncommented, StairsASM will be implemented.
+// This patch adds an entry to the Unit Menu, so installing here is necessary.
+#define STAIRS_ASM
+
 
 //	Effectiveness skills coincide with a rework of the effectiveness system. 
 //	Weapon effectiveness by default is updated via macros in

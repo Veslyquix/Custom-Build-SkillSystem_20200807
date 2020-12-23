@@ -220,6 +220,34 @@ Proc_Vengeance:
 POIN SkillTester
 WORD VengeanceID
 
+ALIGN 4
+Proc_TripleHit:
+#incbin "MultiHitMoves/proc_TripleHit.dmp"
+POIN SkillTester
+WORD TripleHitID
+
+ALIGN 4
+Proc_MultiHit:
+#incbin "MultiHitMoves/proc_MultiHit.dmp"
+POIN SkillTester
+WORD MultiHitID
+
+
+Proc_Absorb:
+#incbin "Absorb/proc_Absorb.dmp"
+POIN SkillTester
+WORD AbsorbID
+WORD LiquidOozeID
+
+Proc_Drain:
+#incbin "Drain/proc_Drain.dmp"
+POIN SkillTester
+WORD DrainID
+WORD LiquidOozeID
+
+Proc_CmbArtHpCost:
+#include "CmbArtHpCost/CmbArtHpCost.lyn.event"
+
 #include "CombatArts/CombatArtProcSkills.event"
 
 //When animations are on, do the fancy palette swapping thing (pink for poison, etc) CURRENTLY DOESN'T WORK
