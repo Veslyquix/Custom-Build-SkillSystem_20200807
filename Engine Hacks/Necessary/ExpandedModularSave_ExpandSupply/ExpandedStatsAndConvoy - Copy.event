@@ -7,40 +7,40 @@ PUSH
 
   //Stat bar drawing
   ORG $87132
-  BYTE $3C 					//max stat cap to 40 (28h)
+  BYTE $28 					//max stat cap to 60 (3Ch)
   
   ORG $87142
-  BYTE $3C					//max stat cap to 40 (28h)
+  BYTE $28 					//max stat cap to 60 (3Ch)
   
   ORG $870FE
-  BYTE $3C 					//max stat cap to 40 (28h)
+  BYTE $28 					//max stat cap to 60 (3Ch)
   
   ORG $87102
-  BYTE $3C					//max stat cap to 40 (28h)
+  BYTE $28 					//max stat cap to 60 (3Ch)
   
   ORG $872AE 
-  BYTE $3C					//max luck cap to 40 (28h)
+  BYTE $28 					//max stat cap to 60 (3Ch)
   
   ORG $2C016 
-  BYTE $3C					//max luck cap to 40 (28h)
+  BYTE $28 					//max stat cap to 60 (3Ch)
   
   ORG $2C01C 
-  BYTE $3C					//max luck cap to 40 (28h)
+  BYTE $28 					//max stat cap to 60 (3Ch)
   
   ORG $18250 
-  BYTE $3C					//max luck cap to 40 (28h)
+  BYTE $28 					//max stat cap to 60 (3Ch)
   
   ORG $18254 
-  BYTE $3C					//max luck cap to 40 (28h)
+  BYTE $28 					//max stat cap to 60 (3Ch)
   
   ORG $926FC 
-  BYTE $3C					//max luck cap to 40 (28h)
+  BYTE $28 					//max stat cap to 60 (3Ch)
   
   ORG $9C154 
-  BYTE $3C					//max luck cap to 40 (28h)
+  BYTE $28 					//max stat cap to 60 (3Ch)
   
   ORG $9C31C
-  BYTE $3C					//max luck cap to 40 (28h)
+  BYTE $28 					//max stat cap to 60 (3Ch)
 
 
   //Convoy size expansion
@@ -103,10 +103,4 @@ PUSH
   ORG $B4738
   BYTE $C7
   
-  //need this
-  ORG $A324A
-  BYTE $C7
-  
-  ORG $A32D2
-  BYTE $C7
 POP

@@ -7,10 +7,10 @@
     #define CharacterTable 0x803D30
 #endif
 #ifndef ClassTable
-  #define ClassTable 0x0144D2D4 //0x807110
+  #define ClassTable 0x807110 	//0x0144D2D4
 #endif
 #ifndef ItemTable
-  #define ItemTable 0x01388210 //0x809B10
+  #define ItemTable 0x809B10 	//0x01388210 //
 #endif
 #ifndef DebuffTable
   #define DebuffTable 0x203f100
