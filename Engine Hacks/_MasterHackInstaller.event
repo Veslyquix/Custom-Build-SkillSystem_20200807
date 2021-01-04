@@ -82,7 +82,9 @@ POP
   #include "Necessary/NegativeStatBoosts/NegativeStatBoosts.event"
 
   //Dragon Veins
-  #include "ExternalHacks/DragonVeins/DragonVeins.event"
+  //#include "ExternalHacks/DragonVeins/DragonVeins.event"
+  //Trap Rework (Dragon Veins, Heal Tiles, ObtainItem, GenericTrap, GenericTrapDisappear)
+  #include "ExternalHacks/TrapRework/TrapRework.event"
   
 //Proper Range Getters	
 //  #include "ExternalHacks/ProperRangeGetters/ProperRangeGetters/ProperRangeGetters.event"
@@ -164,6 +166,8 @@ POP
   // #include "QualityOfLife/PCAndGenericMusic.event"
 
   //#include "QualityOfLife/EventRescue/EventRescue.event"
+
+//not sure if I need this asmc below 
   //#include "QualityOfLife/EventAddTraps/EventAddTraps.event"
   //#include "QualityOfLife/EventSendToConvoy/EventSendToConvoy.event"
 
