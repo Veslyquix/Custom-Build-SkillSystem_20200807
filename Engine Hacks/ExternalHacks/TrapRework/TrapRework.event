@@ -23,7 +23,7 @@
 	#define RedPokeballItemID 16	//respawnable item 
 	#define GoldPokeballItemID 17	//non-respawnable item
 	#define HiddenPokeballItemID 18	//invisible item 
-
+			// 0x1A flowers 
 
 	#define BlueWaitID 32		//Wait
 	#define CutBushID 33		//Cut
@@ -123,51 +123,51 @@
 
 
 	SetTrapMapSprite(CutBushID,0x6A)
-	SetTrapMapSprite(RockSmashID,0x65)
-	SetTrapMapSprite(StrengthBoulderID,0x6A)
-	SetTrapMapSprite(BreakableFloorID,0x6A)
-	SetTrapMapSprite(HoleID,0x6A)
-	SetTrapMapSprite(BoulderReceptacleID,0x6A)
+	SetTrapMapSprite(RockSmashID,0x70)
+	SetTrapMapSprite(StrengthBoulderID,0x71)
+	SetTrapMapSprite(BreakableFloorID,0x72)
+	SetTrapMapSprite(HoleID,0x73)
+	SetTrapMapSprite(BoulderReceptacleID,0x74)
 
-	SetTrapMapSprite(FoodID,0x6A)
-	SetTrapMapSprite(BlueWaitID,0x6A)
+	SetTrapMapSprite(FoodID,0x75)
+	SetTrapMapSprite(BlueWaitID,0x76)
 	SetTrapMapSprite(GenericID,0x6A)
-	SetTrapMapSprite(NPCTalkID,0x6A)
+	SetTrapMapSprite(NPCTalkID,0x6B) //rocket 
 
-	SetTrapMapSprite(Placeholder19ID,0x6A)
-	SetTrapMapSprite(Placeholder20ID,0x6A)
-	SetTrapMapSprite(Placeholder21ID,0x6A)
-	SetTrapMapSprite(Placeholder22ID,0x6A)
-	SetTrapMapSprite(Placeholder23ID,0x6A)
-	SetTrapMapSprite(Placeholder24ID,0x6A)
-	SetTrapMapSprite(Placeholder25ID,0x6A)
-	SetTrapMapSprite(Placeholder26ID,0x6A)
-	SetTrapMapSprite(Placeholder27ID,0x6A)
-	SetTrapMapSprite(Placeholder28ID,0x6A)
-	SetTrapMapSprite(Placeholder29ID,0x6A)
-	SetTrapMapSprite(Placeholder30ID,0x6A)
-	SetTrapMapSprite(Placeholder31ID,0x6A)
-	SetTrapMapSprite(Placeholder41ID,0x6A)
-	SetTrapMapSprite(Placeholder42ID,0x6A)
-	SetTrapMapSprite(Placeholder43ID,0x6A)
-	SetTrapMapSprite(Placeholder44ID,0x6A)
-	SetTrapMapSprite(Placeholder45ID,0x6A)
-	SetTrapMapSprite(Placeholder46ID,0x6A)
-	SetTrapMapSprite(Placeholder47ID,0x6A)
+	SetTrapMapSprite(Placeholder19ID,0x6C) //burrow
+	SetTrapMapSprite(Placeholder20ID,0x6D) //grass
+	SetTrapMapSprite(Placeholder21ID,0x6E) //placeholder
+	SetTrapMapSprite(Placeholder22ID,0x6F) //placeholder
+	SetTrapMapSprite(Placeholder23ID,0x77)
+	SetTrapMapSprite(Placeholder24ID,0x78)
+	SetTrapMapSprite(Placeholder25ID,0x79)
+	SetTrapMapSprite(Placeholder26ID,0x7A) //0x1A flowers (display only)
+	SetTrapMapSprite(Placeholder27ID,0x7B)
+	SetTrapMapSprite(Placeholder28ID,0x7C)
+	SetTrapMapSprite(Placeholder29ID,0x7D)
+	SetTrapMapSprite(Placeholder30ID,0x7E)
+	SetTrapMapSprite(Placeholder31ID,0x7F)
+	SetTrapMapSprite(Placeholder41ID,0x70)
+	SetTrapMapSprite(Placeholder42ID,0x71)
+	SetTrapMapSprite(Placeholder43ID,0x72)
+	SetTrapMapSprite(Placeholder44ID,0x73)
+	SetTrapMapSprite(Placeholder45ID,0x74)
+	SetTrapMapSprite(Placeholder46ID,0x75)
+	SetTrapMapSprite(Placeholder47ID,0x76)
 
-	SetTrapMapSprite(51,0x6A)
-	SetTrapMapSprite(52,0x6A)
-	SetTrapMapSprite(53,0x6A)
-	SetTrapMapSprite(54,0x6A)
-	SetTrapMapSprite(55,0x6A)
-	SetTrapMapSprite(56,0x6A)
-	SetTrapMapSprite(57,0x6A)
-	SetTrapMapSprite(58,0x6A)
-	SetTrapMapSprite(59,0x6A)
-	SetTrapMapSprite(60,0x6A)
-	SetTrapMapSprite(61,0x6A)
-	SetTrapMapSprite(62,0x6A)
-	SetTrapMapSprite(63,0x6A)
+	SetTrapMapSprite(51,0x68) //save point
+	SetTrapMapSprite(52,0x70) //
+	SetTrapMapSprite(53,0x71)
+	SetTrapMapSprite(54,0x72)
+	SetTrapMapSprite(55,0x73)
+	SetTrapMapSprite(56,0x74)
+	SetTrapMapSprite(57,0x75)
+	SetTrapMapSprite(58,0x76)
+	SetTrapMapSprite(59,0x77)
+	SetTrapMapSprite(60,0x78)
+	SetTrapMapSprite(61,0x79)
+	SetTrapMapSprite(62,0x7A)
+	SetTrapMapSprite(63,0x7B)
 
 
 

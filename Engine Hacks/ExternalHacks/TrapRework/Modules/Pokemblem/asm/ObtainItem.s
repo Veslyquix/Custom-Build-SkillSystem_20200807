@@ -361,9 +361,9 @@ ldr r0, [r0, r1]
 cmp r1, #0	@no table entry 
 beq DeleteTrap
 
-@ldr r0, =#0x8BD6B70	
 cmp r0, #0	@no event
 beq DeleteTrap
+
 cmp r0, #1	@dummy event
 beq DeleteTrap
 
@@ -394,28 +394,6 @@ goto_r3:
 bx r3
 
 
-
-
-ObtainItemSpriteFunc:
-push {r4,r14}
-mov r4,r0 @r4 = trap data ptr
-
-ldrb r0,[r4,#3]	@completion flag
-blh CheckEventId
-cmp r0, #0
-bne HiddenSprite	@break if no sprite to display
-mov r0, #0x6A
-b MapSpriteFunc_GoBack
-
-HiddenSprite:
-blh TrapRework_NewUpdateAllLightRunes
-ldr r0,=HiddenMapSpriteID
-ldrb r0,[r0]
-
-MapSpriteFunc_GoBack:
-pop {r4}
-pop {r1}
-bx r1
 
 .ltorg
 .align

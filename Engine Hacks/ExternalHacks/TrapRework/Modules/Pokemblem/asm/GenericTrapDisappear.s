@@ -359,18 +359,14 @@ ldr r0, GTDTable
 ldr r0, [r0, r1]
 
 
-cmp r0, #0	@no table entry 
+cmp r1, #0	@no table entry 
 beq DeleteTrap
 
-b AlwaysEvent
+cmp r0, #0	@no event
+beq DeleteTrap
 
-@cmp r1, #0	@no event
-@beq DeleteTrap
-
-@b AlwaysEvent
-@ldr r0, =#0x8BD6B70	
-@cmp r1, #1	@dummy event
-@beq DeleteTrap
+cmp r0, #1	@dummy event
+beq DeleteTrap
 
 
 @At this point, r0 should be the pointer to the event to execute.
@@ -402,26 +398,7 @@ bx r3
 
 
 
-GenericTrapDisappearSpriteFunc:
-push {r4,r14}
-mov r4,r0 @r4 = trap data ptr
 
-ldrb r0,[r4,#3]	@completion flag
-blh CheckEventId
-cmp r0, #0
-bne HiddenSprite	@break if no sprite to display
-mov r0, #0x6A
-b MapSpriteFunc_GoBack
-
-HiddenSprite:
-blh TrapRework_NewUpdateAllLightRunes
-ldr r0,=HiddenMapSpriteID
-ldrb r0,[r0]
-
-MapSpriteFunc_GoBack:
-pop {r4}
-pop {r1}
-bx r1
 
 .ltorg
 .align

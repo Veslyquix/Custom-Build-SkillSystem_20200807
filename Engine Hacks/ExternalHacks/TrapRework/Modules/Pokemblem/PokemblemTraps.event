@@ -15,7 +15,7 @@
 	SetTrapMapSprite(CustomTrapID,CustomDefaultMapSpriteID)
 	SetTrapMapSpritePalette(CustomTrapID,NPCTrapPaletteWord)	
 	SetImpassableTrap(CustomTrapID)
-	SetTrapMapSpriteFunc(CustomTrapID,GenericTrapSpriteFunc)
+	//SetTrapMapSpriteFunc(CustomTrapID,GenericTrapSpriteFunc)
 
 
 
@@ -83,12 +83,12 @@
 	//macros for usage
 #define Generic(XX,YY,EffectID) "BYTE CustomTrapID XX YY 0x0 0x0 EffectID"
 #define Generic(XX,YY,ReqFlag, Sprite, EffectID) "BYTE CustomTrapID XX YY ReqFlag Sprite EffectID"
-#define GenericEffect(id, event) "PUSH; ORG GenericTrapDisappearTableOffset + (4 * id); POIN event; POP"
+#define GenericEffect(id, event) "PUSH; ORG GenericTrapTableOffset + (4 * id); POIN event; POP"
 
 
 #define GenericDisappear(XX,YY,EffectID) "BYTE CutBushID XX YY 0x0 0x0 EffectID"
 #define GenericDisappear(XX,YY,ReqFlag, Sprite, EffectID) "BYTE CutBushID XX YY ReqFlag Sprite EffectID"
-#define GenericDisappearEffect(id, event) "PUSH; ORG GenericTrapTableOffset + (4 * id); POIN event; POP"
+#define GenericDisappearEffect(id, event) "PUSH; ORG GenericTrapDisappearTableOffset + (4 * id); POIN event; POP"
 
 
 #define ObtainEffect(id, event) "PUSH; ORG ObtainItemEventTableOffset + (4 * id); POIN event; POP"
@@ -158,12 +158,13 @@ POIN GenericTrapDisappearTableOffset
 
 
 
-	SetTrapMapSpriteFunc(RedPokeballItemID,ObtainItemSpriteFunc)
+	//SetTrapMapSpriteFunc(RedPokeballItemID,ObtainItemSpriteFunc)
 
 //add to unit menu to make usable 
 //ObtainItemEffect:
 #include "asm/ObtainItem.lyn.event"
-POIN ObtainItemEventTableOffset
+POIN GenericTrapDisappearTableOffset //making an febuilder patch easier by doing this 
+//POIN ObtainItemEventTableOffset
 WORD RedPokeballItemID
 POIN GiveItemEvent
 

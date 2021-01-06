@@ -1,0 +1,34 @@
+C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\MAKE CUSTOM_BUILD.cmd  
+output:
+
+C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807>echo off 
+Copying ROM
+        1 file(s) copied.
+
+Assembling
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Tables\Table Installer.event:24:1: ModularPreBattleTable space starts at 0xB2D8B1 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Tables\Table Installer.event:27:1: PromotionLevelList space starts at 0xB2E8B4 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\ROM Buildfile.event:16:5: Used table space ends at 0xB303B4 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Engine Hacks\ExternalHacks\TrapRework\Modules\Pokemblem\PokemblemTraps.event:106:5: ObtainItemEventTableOffset space at 0xB4DA20 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Engine Hacks\ExternalHacks\TrapRework\Modules\Pokemblem\PokemblemTraps.event:112:5: GenericTrapTableOffset space at 0xB4DE20 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Engine Hacks\ExternalHacks\TrapRework\Modules\Pokemblem\PokemblemTraps.event:117:5: GenericTrapDisappearTableOffset space at 0xB4E220 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Engine Hacks\ExternalHacks\StrMagSplit\ModularStatScreenStrmag\ModularStatScreen.event:192:2: page 0x4 at 0xB4FFBC 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Engine Hacks\ExternalHacks\StrMagSplit\ModularStatScreenStrmag\ModularStatScreen.event:195:4: page 0x4 ends at 0xB50260 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Engine Hacks\ExternalHacks\ReaverSplit\ReaverSplit.event:10:1: 0xB539F1 0xB53A39 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Engine Hacks\SkillSystem\Internals\SkillSystem.event:184:5: GetSkillsASMC starts at 0xB55D64 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Engine Hacks\SkillSystem\SkillSystemInstaller.event:3:1: SkillLearned1 space starts at 0xB568D4 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Engine Hacks\SkillSystem\skill_lists.event:1:1: SkillLearned space starts at 0xB568D4 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Engine Hacks\SkillSystem\skill_descriptions.event:1:1: SkillDescTable space starts at 0xB574B0 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Engine Hacks\_MasterHackInstaller.event:239:5: "Using EMS Save/Suspend Expansion" 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Engine Hacks\Necessary\ExpandedModularSave_ExpandSupply\ExModularSave.event:88:3: EMS with strmag and Stair 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\ROM Buildfile.event:20:5: Used hax space ends at 0xB7CFF4 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Pokemblem\Installer.txt:3:2: DangerRadius space starts at 0xB7CFF4 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Pokemblem\Installer.txt:6:2: DynamicEquip space starts at 0xB7D83C 
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\ROM Buildfile.event:23:2: Used Pokemblem space ends at 0xB7D8E4 
+error: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\ROM Buildfile.event:25:12: Could not find file "aosdfjgasd.sdf".
+message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\ROM Buildfile.event:37:5: Used free space ends at 0xB7D8E4 
+Errors occurred; no changes written.
+
+Done!
+
+
