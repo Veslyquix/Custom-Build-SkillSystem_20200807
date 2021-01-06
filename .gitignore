@@ -19,6 +19,7 @@ $RECYCLE.BIN/
 
 # rom stuff
 *.gba
+*.gba.7z
 *.sav
 *.sgm
 *.ss1
