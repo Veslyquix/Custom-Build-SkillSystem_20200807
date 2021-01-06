@@ -11,9 +11,9 @@ POIN LungeUpdate
 	POIN FinalEscapeThing
 #endif // ESCAPE_ARRIVE
 
-#ifdef Promote_On_Level_Up
+
 	POIN PromoteOnLevelUp
-#endif //Promote_On_Level_Up
+
 
 WORD 0
 

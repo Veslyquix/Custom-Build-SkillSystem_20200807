@@ -131,6 +131,9 @@ POP
   // If uncommented, StairsASM will be implemented.
   // This patch adds an entry to the Unit Menu, so installing here is necessary.
   #include "ExternalHacks/Stairs/Stairs.event"
+
+	//Post-action promotion
+	#include "ExternalHacks/PromoteOnLevelUp/PromoteOnLevelUp.event"
   
   // If uncommented, Raid will be implemented.
   // This patch adds an entry to the Unit Menu, so installing here is necessary.

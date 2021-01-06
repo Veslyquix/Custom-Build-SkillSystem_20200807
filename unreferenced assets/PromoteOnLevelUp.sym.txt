@@ -1,0 +1,11 @@
+SkillIcons=$B576B0
+Skill_Getter=$B557D8
+DragonVeinsIcon_Unit67Graphic=$B32D88
+RTextLoop=$B55F1C
+SkillDescGetter=$B55C6C
+SkillTester=$B55A54
+portrait_0x01_face_Graphic=$B620A0
+portrait_0x01_mouth_Graphic=$B630A4
+portrait_0x01_pal_Graphic=$B636A4
+portrait_0x01_minimug_Graphic=$B636C4
+PromoteOnLevelUp=$14CC000

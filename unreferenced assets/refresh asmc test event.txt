@@ -1,0 +1,4 @@
+400502007C438008	//SVAL[MemorySlot:0x2 Slot2][Value_to_store:0x880437C]
+400501001F000000	//SVAL[MemorySlot:0x1 Slot1][Value_to_store:0x1F]
+400D0000EDE5BA08	//[Assembler function:0x8BAE5ED _08BAE5EC]is called[argument:0x0](ASMC)
+2802070020010000	//Event end(also serves as a section to no fade)(EVBIT_T+ENDA)

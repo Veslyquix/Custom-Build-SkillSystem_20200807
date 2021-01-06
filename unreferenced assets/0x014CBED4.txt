@@ -1,0 +1,10 @@
+2633FFFF	//Get the coordinates of the active (visiting/current) unit(CHECK_COORDS)
+4005010000000000
+4005020000000000
+4005030000000000
+4005040001000000
+4005060000000000
+40050A0000000000
+40050B0000000000
+400D0000D1911908	//Set ALL Unit's [Status:0x0 ROM Unit Struct] to [NewValue:0x0] If Cond conditions[CheckUnit 00=ANY:0x0 ][CheckClass 00=ANY:0x0 ][CheckItem 00=ANY:0x0 ][FF=ANY:0x1 Enemy(red)]in[StartRange:0x0 (0,0)][EndRange 00=ANY:0x0 (0,0)]
+2802070020010000	//Event end(also serves as a section to no fade)(EVBIT_T+ENDA)

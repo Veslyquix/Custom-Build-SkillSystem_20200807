@@ -83,6 +83,10 @@ POIN Proc_BlackMagic Proc_Petrify Proc_Enrage Proc_Deadeye //skills that apply a
 
 POIN Proc_Corrosion //skills that don't affect damage
 
+#ifdef __Proc_StatusWeapons2__  //<<<<<<<<<<<<<<< status weapons 
+POIN Proc_StatusWeapons2        //<<<<<<<<<<<<<<<
+#endif                          //<<<<<<<<<<<<<<<
+
 
 #ifdef Modular_PreBattle_Skill
 	POIN Proc_CmbArtHpCost
