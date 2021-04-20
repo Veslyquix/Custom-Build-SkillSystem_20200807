@@ -1,0 +1,11 @@
+#ifdef POKEMBLEM
+
+	MESSAGE DangerRadius space starts at currentOffset
+#include "DangerRadius/FogDR.event"
+
+	MESSAGE DynamicEquip space starts at currentOffset
+#include "DynamicEquip/DynamicWeaponEquipInstaller.event"
+//#include "Menu/Submenu/Installer.event"
+
+
+#endif // not pokemblem so don't install stuff

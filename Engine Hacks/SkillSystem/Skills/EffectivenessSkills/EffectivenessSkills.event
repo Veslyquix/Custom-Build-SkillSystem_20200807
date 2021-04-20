@@ -1,4 +1,10 @@
-#include "Nullify/Nullify.event" //includes effectiveness rework installation
+#ifdef POKEMBLEM //POKEMBLEM Effective weapons gain an accuracy bonus & more 
+#include "Nullify/NullifyPokemblem.event" //includes effectiveness rework installation
+#endif // POKEMBLEM Effective weapons gain an accuracy bonus & more 
+
+#ifndef POKEMBLEM
+#include "Nullify/Nullify.event" 
+#endif // not pokemblem version
 
 #ifdef ENABLE_SLAYER_AND_EFFECTIVENESS_REWORK
 #include "EffectivenessRework.event" //for setting up reworked effectiveness

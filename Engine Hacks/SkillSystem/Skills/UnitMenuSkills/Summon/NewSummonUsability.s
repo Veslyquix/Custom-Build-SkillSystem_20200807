@@ -37,9 +37,6 @@ beq ReturnFalse
 
 
 @vanilla summon flag check
-ldr r5,=gActiveUnit
-ldr r2,[r5]
-
 ldr r0,[r2]
 ldr r1,[r2,#4]
 ldr r0,[r0,#0x28]

@@ -1,0 +1,9 @@
+#include "Nullify/Nullify.event" //includes effectiveness rework installation
+
+#ifdef ENABLE_SLAYER_AND_EFFECTIVENESS_REWORK
+#include "EffectivenessRework.event" //for setting up reworked effectiveness
+#else
+#endif //ENABLE_SLAYER_AND_EFFECTIVENESS_REWORK
+
+//padding ver 20200519
+BYTE 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00

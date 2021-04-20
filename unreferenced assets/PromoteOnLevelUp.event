@@ -1,0 +1,4 @@
+ALIGN 4
+PromoteOnLevelUp:
+#include "PromoteOnLevelUp.lyn.event"
+    MESSAGE Used prom space ends at currentOffset

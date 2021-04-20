@@ -39,6 +39,11 @@ bne End
 @cmp r0, #1
 @bne End
 
+@make sure this is the actual attacker kthx
+ldr r0,=#0x203A4EC
+cmp r0,r4
+bne End
+
 @if we proc, set the offensive skill flag - and unset the miss flag.
 ldr     r2,[r6]    
 lsl     r1,r2,#0xD                @ 0802B42C 0351     
@@ -64,18 +69,6 @@ asr r0, #0x10
 ldrh r1, [r7, #8] @final def
 lsl r1, #0x10
 asr r1, #0x10
-
-@@
-
-ldr r0, =0x94441D8
-mov r1, #0x01
-blh 0x0800d07c
-
-MOV r0, #0x17
-POP {r1}
-bx r1
-
-@@
 sub r0, r1 @calc damage
 lsr r1, r0, #1
 add r0, r1 @multiply by 1.5x

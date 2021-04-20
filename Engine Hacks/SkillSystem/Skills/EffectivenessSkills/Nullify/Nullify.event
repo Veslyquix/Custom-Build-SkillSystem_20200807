@@ -8,11 +8,6 @@
 #include "EAstdlib.event"
 #include "Extensions/Hack Installation.txt"
 
-#ifndef FreeSpace
-    #define FreeSpace 0xB2A610
-    ORG FreeSpace
-#endif
-
 #ifndef ENABLE_SLAYER_AND_EFFECTIVENESS_REWORK
 	//we merely add Slayer and Nullify checks as necessary
 	
@@ -51,8 +46,7 @@
 	
 	//Modify the part that multiplies weapon might for effective weapons and slayer
 	ORG $2AAEC
-	callHack_r3(Add_Weapon_Might) //0xC bytes
-	SHORT 0xE027
+	#incbin "Add_Weapon_Might.dmp"
 	
 	//slayer redux
 	ORG $16C88
@@ -64,10 +58,6 @@
 	
 	POP
 	
-	ALIGN 4
-	Add_Weapon_Might:
-	#incbin "Add_Weapon_Might.dmp"
-
 	ALIGN 4
 	Redone_Slayer:
 	#incbin "Redone_Slayer.dmp"

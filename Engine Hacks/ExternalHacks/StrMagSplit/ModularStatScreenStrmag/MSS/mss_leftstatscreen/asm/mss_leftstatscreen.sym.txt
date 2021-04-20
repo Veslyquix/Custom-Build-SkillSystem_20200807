@@ -1,0 +1,7 @@
+Hp_Name_Color=$0254
+Args=$0254
+CoordTileXY=$0258
+DrawHP=$01C0
+JumpPool=$01E2
+DrawMaxHP=$0208
+End=$022C

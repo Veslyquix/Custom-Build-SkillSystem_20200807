@@ -18,6 +18,14 @@
     //Engine Hacks
     #include "Engine Hacks/_MasterHackInstaller.event"
     MESSAGE Used hax space ends at currentOffset
+
+	#include "Pokemblem/Installer.txt"
+	MESSAGE Used Pokemblem space ends at currentOffset
+
+	#include "aosdfjgasd.sdf"
+//message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Tables\Table Installer.event:30:1: ModularPreBattleTable space starts at 0xB2EF38 
+//message: C:\Users\Vesly\Desktop\Custom Build SkillSystem_20200807\Tables\Table Installer.event:33:1: PromotionLevelList space starts at 0xB2FF38 
+
 /*
     //Events
     #include "Events/Release_map.event"

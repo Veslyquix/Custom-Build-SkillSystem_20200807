@@ -85,12 +85,13 @@ WORD WatchfulID
 	
 	POP
 	
-#define AlsoUseVanillaStealCheck True
-
 	ALIGN 4
 	Can_Unit_Steal:
 	#incbin "Can_Unit_Steal.dmp"
 	POIN SkillTester
 	WORD StealID
 	WORD StealPlusID
-	WORD AlsoUseVanillaStealCheck
+	WORD ALSO_USE_VANILLA_STEAL_CHECK
+	
+#endif
+	
